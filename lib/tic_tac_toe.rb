@@ -69,4 +69,7 @@ class TicTacToe
     display_board
   end
 
+  def current_player
+  end
+
 end
