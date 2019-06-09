@@ -47,7 +47,16 @@ class TicTacToe
     end
   end
 
-  
+  def turn_count
+    turn = 0
+    @board.each do |index|
+      if index == "X" || index == "O"
+      turn += 1
+      end
+    end
+    turn
+  end
+
   def turn
     puts "Please choose a number 1-9:"
     user_input = gets.chomp
